@@ -23,33 +23,69 @@
 
   <main class="container">
     <section class="page-header">
-      <h1>Contact Me</h1>
-      <p>Feel free to reach out.</p>
-    </section>
-
-    <section class="card">
-      <h2>Email</h2>
-      <p>You can contact me directly by email:</p>
+      <h1>Contact</h1>
       <p>
-        <a class="button" href="mailto:youremail@example.com">Send Me an Email</a>
+        Open to internship and full-time software engineering conversations, collaborative project work, and technical networking across systems, backend, and platform engineering domains.
       </p>
     </section>
 
-    <section class="card">
-      <h2>Message Form</h2>
-      <p>This form is a simple static contact layout for the site design.</p>
-      <form>
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Your name" />
+    <section class="split">
+      <article class="card">
+        <h2>Direct Contact</h2>
+        <p>
+          The fastest way to reach me is via email. If you are reaching out about an opportunity, including role type, team focus, and stack context helps me respond quickly.
+        </p>
+        <p>
+          <a class="button" href="mailto:ayushppatel0728@gmail.com">Send Me an Email</a>
+        </p>
+        <h3>Best Topics to Discuss</h3>
+        <ul>
+          <li>Software engineering internships or new-grad roles</li>
+          <li>Distributed systems and backend platform opportunities</li>
+          <li>Hackathon collaboration and technical community projects</li>
+          <li>Project architecture review and systems design conversations</li>
+        </ul>
+      </article>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Your email" />
+      <article class="card">
+        <h2>Message Form</h2>
+        <p>
+          This form sends messages directly to my inbox. Please include enough context so I can follow up quickly.
+        </p>
+        <form action="https://formsubmit.co/ayushppatel0728@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New Portfolio Contact Form Submission" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_next" value="https://ayushp0728.github.io/contact-success.html" />
+          <input type="hidden" name="_honey" value="" />
+          <input type="hidden" name="_captcha" value="false" />
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="6" placeholder="Your message"></textarea>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your full name" required minlength="2" autocomplete="name" />
 
-        <button type="submit" class="button">Submit</button>
-      </form>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email" />
+
+          <label for="organization">Organization (Optional)</label>
+          <input type="text" id="organization" name="organization" placeholder="Company, university, or team" autocomplete="organization" />
+
+          <label for="topic">Topic</label>
+          <select id="topic" name="topic" required>
+            <option value="" selected disabled>Select a topic</option>
+            <option value="Internship Opportunity">Internship Opportunity</option>
+            <option value="Full-Time Opportunity">Full-Time Opportunity</option>
+            <option value="Project Collaboration">Project Collaboration</option>
+            <option value="Technical Networking">Technical Networking</option>
+            <option value="Other">Other</option>
+          </select>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="7" placeholder="Share details about your opportunity or collaboration idea." required minlength="20"></textarea>
+
+          <p class="form-note">You will get a confirmation page after submitting.</p>
+
+          <button type="submit" class="button">Send Message</button>
+        </form>
+      </article>
     </section>
   </main>
 

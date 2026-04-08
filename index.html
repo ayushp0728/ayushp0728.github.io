@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ayush Patel | About</title>
+  <title>Ayush Patel | Home</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -11,8 +11,8 @@
     <nav class="navbar">
       <div class="logo">Ayush Patel</div>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="experience.html">Experience</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="creative.html">Creative Work</a></li>
@@ -22,33 +22,69 @@
   </header>
 
   <main class="container">
-    <section class="page-header">
-      <h1>About Me</h1>
-      <p>Learn more about my academic background and interests.</p>
+    <section class="hero">
+      <div class="photo-box">
+        <img src="headshot.png" alt="Portrait of Ayush Patel" />
+      </div>
+      <div class="hero-text">
+        <h1>Software Engineer Focused on Systems, Infrastructure, and Applied AI</h1>
+        <p class="subtitle">Computer Science @ Rutgers University</p>
+        <p class="lead">
+          I build backend-heavy software that combines systems thinking with practical product delivery. My strongest areas include distributed systems, API platforms, concurrency, and data-intensive engineering workflows where reliability and performance both matter.
+        </p>
+        <div class="tag-row">
+          <span class="tag">Distributed Systems</span>
+          <span class="tag">Backend Engineering</span>
+          <span class="tag">Cloud Architecture</span>
+          <span class="tag">AI + Infra</span>
+          <span class="tag">Performance</span>
+        </div>
+      </div>
     </section>
 
     <section class="card">
-      <h2>Background</h2>
-      <p>
-        I am a Rutgers University student studying computer science with interests
-        in software engineering, distributed systems, and AI infrastructure.
-      </p>
+      <p class="kicker">Snapshot</p>
+      <div class="meta-grid">
+        <article class="meta-item">
+          <h3>Current Focus</h3>
+          <p>Scalable platform and systems engineering projects</p>
+        </article>
+        <article class="meta-item">
+          <h3>Engineering Style</h3>
+          <p>Measure first, optimize second, automate always</p>
+        </article>
+        <article class="meta-item">
+          <h3>Technical Interests</h3>
+          <p>Scheduling, RPC systems, telemetry, and observability</p>
+        </article>
+        <article class="meta-item">
+          <h3>Long-Term Goal</h3>
+          <p>Build robust developer platforms and distributed services</p>
+        </article>
+      </div>
     </section>
 
-    <section class="card">
-      <h2>Academic Interests</h2>
-      <p>
-        My interests include backend development, scalable systems, cloud tooling,
-        and technical projects that combine software with performance and infrastructure.
-      </p>
-    </section>
+    <section class="split">
+      <article class="card">
+        <h2>What I Work On</h2>
+        <p>
+          I enjoy building systems where low-level implementation details and high-level product requirements intersect. This includes designing service boundaries, defining efficient data paths, implementing APIs, instrumenting runtime behavior, and validating throughput or latency gains under load.
+        </p>
+        <p>
+          My coursework and project work often mirror real production concerns: predictable scheduling behavior, fault handling across distributed nodes, and maintaining clear interfaces between components owned by different teams.
+        </p>
+      </article>
 
-    <section class="card">
-      <h2>Goals</h2>
-      <p>
-        I want to continue building strong technical experience through internships,
-        projects, and research opportunities related to computer science.
-      </p>
+      <article class="card">
+        <h2>Approach to Technical Projects</h2>
+        <ul>
+          <li>Start from constraints: expected traffic, consistency needs, and failure conditions.</li>
+          <li>Choose tooling for fit and maintainability instead of novelty.</li>
+          <li>Create observability from day one with logs, metrics, and reproducible tests.</li>
+          <li>Document assumptions so architecture decisions remain understandable over time.</li>
+          <li>Iterate using benchmarks to justify refactors and scheduling choices.</li>
+        </ul>
+      </article>
     </section>
   </main>
 

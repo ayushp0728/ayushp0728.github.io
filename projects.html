@@ -24,31 +24,89 @@
   <main class="container">
     <section class="page-header">
       <h1>Projects</h1>
-      <p>Some technical work and areas I have explored.</p>
-    </section>
-
-    <section class="card">
-      <h2>Scheduling Web App</h2>
       <p>
-        Built and explored a web-based scheduling tool to help users compare class schedules
-        and organize course information more easily.
+        A selection of backend, distributed systems, and hackathon projects. Each card includes a GitHub link placeholder so you can quickly drop in repository URLs.
       </p>
     </section>
 
     <section class="card">
-      <h2>Distributed / Systems Projects</h2>
-      <p>
-        Worked on projects involving backend systems, APIs, infrastructure automation,
-        and performance-related computing topics.
-      </p>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-head">
+            <h2>Custom Thread Library</h2>
+            <span class="project-date">October 2025</span>
+          </div>
+          <p class="project-tech"><strong>Tech:</strong> C, Make</p>
+          <ul>
+            <li>Implemented a user-level threading runtime in C with support for thread creation, joining, cooperative context switching, and signal-based preemption.</li>
+            <li>Used `ucontext`, custom thread control blocks (TCBs), and manually managed stacks to emulate core pthread-style behavior at user level.</li>
+            <li>Built STCF, MLFQ, and CFS-inspired schedulers, enabling side-by-side scheduling experiments with Linux-like policy behavior at simplified scale.</li>
+          </ul>
+          <a class="project-link" href="https://github.com/your-username/custom-thread-library" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-head">
+            <h2>Distributed Object Store</h2>
+            <span class="project-date">March 2026</span>
+          </div>
+          <p class="project-tech"><strong>Tech:</strong> Python, gRPC, Protocol Buffers, REST</p>
+          <ul>
+            <li>Built a gRPC-based distributed storage service with protocol buffer serialization to support efficient node-to-node RPC communication.</li>
+            <li>Developed REST and CLI proxy layers that translate HTTP and terminal commands into strongly typed gRPC requests.</li>
+            <li>Implemented primary-coordinated replication with parallel fan-out via thread pools, achieving roughly 1.8x to 2.3x higher write throughput than sequential replication under 8+ concurrent clients.</li>
+          </ul>
+          <a class="project-link" href="https://github.com/your-username/distributed-object-store" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-head">
+            <h2>Distributed IoT Device Platform</h2>
+            <span class="project-date">February 2026</span>
+          </div>
+          <p class="project-tech"><strong>Tech:</strong> Python, FastAPI, PostgreSQL, Redis, REST APIs, WebSockets, Docker</p>
+          <ul>
+            <li>Designed a cloud-native distributed IoT platform for ingesting, processing, and visualizing real-time sensor telemetry from edge devices.</li>
+            <li>Modeled environmental streams (air quality, water quality, and related metrics) for continuous campus-style infrastructure monitoring scenarios.</li>
+            <li>Implemented time-series and relational persistence with PostgreSQL to support historical analytics, alerting workflows, and device metadata management.</li>
+          </ul>
+          <a class="project-link" href="https://github.com/your-username/distributed-iot-platform" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-head">
+            <h2>Scribe (HackRU Spring)</h2>
+            <span class="project-date">February 2025</span>
+          </div>
+          <p class="project-tech"><strong>Tech:</strong> Ollama (DeepSeek-R1), OpenCV, PyTesseract, Arduino, TypeScript, Next.js</p>
+          <ul>
+            <li>Created a Next.js web app for viewing scanned book pages and AI-generated summaries from extracted text.</li>
+            <li>Implemented a WebSocket backend for command streaming and serverless functions for forwarding scanned text into Firebase.</li>
+            <li>Integrated OCR output into an automated summary pipeline and paired it with a robotic page-turning subsystem using Arduino, motors, and serial communication.</li>
+          </ul>
+          <a class="project-link" href="https://github.com/your-username/scribe" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-head">
+            <h2>SignBridge (HackRU)</h2>
+            <span class="project-date">October 2024</span>
+          </div>
+          <p class="project-tech"><strong>Tech:</strong> OpenCV, FastAPI, TypeScript, React, CSS, GCP, WebRTC</p>
+          <ul>
+            <li>Awarded Best Project among 400+ participants for an AI-supported ASL education web platform built by a team of four.</li>
+            <li>Used WebRTC to establish secure real-time peer-to-peer communication with React on frontend and FastAPI on backend.</li>
+            <li>Implemented CV inference and analytics APIs for immediate feedback loops, and integrated OpenAI API outputs to generate tailored user responses based on model results.</li>
+          </ul>
+          <a class="project-link" href="https://github.com/your-username/signbridge" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+        </article>
+      </div>
     </section>
 
     <section class="card">
-      <h2>Future Work</h2>
-      <p>
-        I am interested in continuing to build projects in AI infrastructure,
-        distributed systems, cloud tooling, and software engineering.
-      </p>
+      <h2>How to Add Your Actual GitHub Links</h2>
+      <p>Replace each project card link with your real URL:</p>
+      <pre class="code-block">&lt;a class="project-link" href="https://github.com/your-username/your-repo" target="_blank" rel="noopener noreferrer"&gt;GitHub Repo&lt;/a&gt;</pre>
     </section>
   </main>
 
